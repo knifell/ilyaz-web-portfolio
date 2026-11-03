@@ -1,0 +1,10 @@
+# Создание двух изображений
+
+Инструмент: встроенный ImageGen, режим генерации с нуля. Дата: 2 ноября 2026. По одному изображению на назначение, без массовых вариантов. Обработка: уменьшение до 1536×1024 и WebP quality 86.
+
+## assets/images/workspace-v4.webp
+Use case: photorealistic-natural. Asset type: hero photograph for an independent web developer portfolio. Create one very clean high-end editorial photograph, landscape 3:2. A single open unbranded thin dark laptop on a matte warm grey desk, against a plain muted sage-grey wall. Laptop is the clear dominant subject, large and easy to recognize, three-quarter angle, elegantly framed, soft daylight and a single gentle shadow. On its screen a very simple clean web page layout: large neutral blocks, one olive action shape, absolutely no small writing or dense dashboard. Only the laptop, no accessories, no coffee, no plants, no books, no other devices, no people, no cables, no decorative clutter. Medium tone overall: neither bright white nor dark black, subdued grey-green and stone. Realistic professional photograph with tactile materials and restrained composition, no logos, no captions, no watermark. This is a calm supporting visual, not an infographic or UI screenshot.
+
+## assets/images/chair-v4.webp
+Use case: product-mockup. Asset type: large furniture-shop hero and portfolio project-cover photograph. One premium photorealistic studio editorial photograph, landscape 3:2, a single sculptural contemporary lounge chair with broad soft taupe fabric upholstery, rounded back, visible simple natural oak base. Chair entirely visible and large in the image, generous uncomplicated composition, plain medium warm grey studio wall and floor, subtle soft sunlight from the left and clean grounded shadow. Monochromatic quiet material palette, muted wood and taupe, no pure white or black background. Absolutely no room decoration, no plants, books, shelves, paintings, cushions, side tables, people, lettering, logos or watermark. A client should understand the subject at a glance. Photo should feel real, tactile and carefully art-directed, not glossy 3D render.
+
