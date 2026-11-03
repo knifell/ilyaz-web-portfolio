@@ -1,0 +1,7 @@
+@font-face{font-family:Manrope;src:url('../fonts/Manrope.ttf') format('truetype');font-weight:200 800;font-display:swap}
+@font-face{font-family:Lora;src:url('../fonts/Lora.ttf') format('truetype');font-weight:400 700;font-display:swap}
+.icon{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;vertical-align:middle}
+::selection{color:#fff;background:var(--blue,#85513c)}
+html{color-scheme:light;scrollbar-color:#a4acb5 transparent}
+h1,h2,h3{text-wrap:balance}p{text-wrap:pretty}button,a,input{caret-color:var(--blue,#85513c)}
+button:disabled{opacity:.45}dialog{overscroll-behavior:contain}.product-price,.detail-price,.total,.quantity,output{font-variant-numeric:tabular-nums}
