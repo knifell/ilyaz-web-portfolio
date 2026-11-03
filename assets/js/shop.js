@@ -26,7 +26,7 @@
   const announce=message=>{document.getElementById('cart-live').textContent=message;};
   function add(id){
     const p=find(id);if(!p)return;
-    if((cart[id]||0)>=99){const message='В демокорзине максимум 99 единиц одного товара.';if(productDialog.open)document.getElementById('detail-added').textContent=message;else toast(message);return;}
+    if((cart[id]||0)>=99){const message='В корзине максимум 99 единиц одного товара.';if(productDialog.open)document.getElementById('detail-added').textContent=message;else toast(message);return;}
     cart[id]=(cart[id]||0)+1;lastRemoved=null;feedback='';persist();
     if(productDialog.open)document.getElementById('detail-added').textContent=`Добавлено. В корзине: ${cart[id]} шт.`;
     else toast(`Добавлено в корзину: ${p.name}`);
@@ -37,7 +37,7 @@
   });
   function detail(id){
     const p=find(id);if(!p)return;
-    document.getElementById('product-detail').innerHTML=`<div class="detail-layout"><img class="detail-image" src="${image(p)}" alt="${esc(p.alt)}" width="${p.imageWidth || 900}" height="${p.imageHeight || 900}" style="object-position:${p.position}"><div class="detail-copy"><h2 id="product-title">${esc(p.name)}</h2><p class="detail-price">${money(p.price)}</p><p class="detail-description">${esc(p.description)}</p><dl><div><dt>Материалы</dt><dd>${esc(p.material)}</dd></div><div><dt>Размеры, условно</dt><dd>${esc(p.size)}</dd></div><div><dt>Цвет</dt><dd>${esc(p.color)}</dd></div></dl><button class="button rust" type="button" data-add="${p.id}">Добавить в корзину ${icon('plus')}</button><p id="detail-added" class="detail-added" role="status" aria-live="polite"></p><button type="button" class="continue-shopping" data-detail-cart>Открыть корзину</button><p class="detail-note">Учебный товар. Фото — иллюстрация, характеристики и цена вымышлены.</p></div></div>`;
+    document.getElementById('product-detail').innerHTML=`<div class="detail-layout"><img class="detail-image" src="${image(p)}" alt="${esc(p.alt)}" width="${p.imageWidth || 900}" height="${p.imageHeight || 900}" style="object-position:${p.position}"><div class="detail-copy"><h2 id="product-title">${esc(p.name)}</h2><p class="detail-price">${money(p.price)}</p><p class="detail-description">${esc(p.description)}</p><dl><div><dt>Материалы</dt><dd>${esc(p.material)}</dd></div><div><dt>Размеры, условно</dt><dd>${esc(p.size)}</dd></div><div><dt>Цвет</dt><dd>${esc(p.color)}</dd></div></dl><button class="button rust" type="button" data-add="${p.id}">Добавить в корзину ${icon('plus')}</button><p id="detail-added" class="detail-added" role="status" aria-live="polite"></p><button type="button" class="continue-shopping" data-detail-cart>Открыть корзину</button><p class="detail-note">Фото — иллюстрация. Характеристики и цена приведены для примера.</p></div></div>`;
     productDialog.showModal();
   }
   const grid=document.getElementById('products');
@@ -67,7 +67,7 @@
     document.getElementById('cart-summary').hidden=!items.length;
     document.getElementById('cart-items').innerHTML=items.length?items.map(([id,quantity])=>{
       const p=find(id);return `<article class="cart-row" data-cart-id="${id}"><img src="${image(p)}" alt="${esc(p.alt)}" width="76" height="90" style="object-position:${p.position}"><div><h3>${esc(p.name)}</h3><p>${money(p.price*quantity)}</p><div class="cart-row-bottom"><div class="quantity"><button type="button" data-change="-1" data-id="${id}" aria-label="Уменьшить количество: ${esc(p.name)}">−</button><output aria-label="Количество: ${esc(p.name)}">${quantity}</output><button type="button" data-change="1" data-id="${id}" aria-label="Увеличить количество: ${esc(p.name)}" ${quantity>=99?'disabled':''}>+</button></div><button class="remove-item" type="button" data-remove="${id}" aria-label="Удалить из корзины: ${esc(p.name)}">Удалить</button></div></div></article>`;
-    }).join(''):'<div class="empty-cart"><h3>Корзина пока пуста</h3><p>Добавьте предмет из каталога.<br>Это демонстрация, покупки не принимаются.</p></div>';
+    }).join(''):'<div class="empty-cart"><h3>Корзина пока пуста</h3><p>Добавьте предмет из каталога.<br>Покупки не принимаются.</p></div>';
     document.getElementById('cart-total').textContent=money(total());
     document.getElementById('storage-note').hidden=storageAvailable;
     const undo=document.getElementById('undo-remove');undo.hidden=!lastRemoved;
