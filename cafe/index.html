@@ -2,11 +2,11 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#173e35">
+  <meta name="theme-color" content="#fffbf0">
   <meta name="description" content="Лист — концепт городского кафе в Бишкеке. Завтраки, любимые блюда, кофе и заказ через WhatsApp.">
   <title>Лист — городское кафе, Бишкек</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=2">
   <script src="config.js" defer></script><script src="app.js" defer></script>
 </head>
 <body>
@@ -20,8 +20,19 @@
   <nav class="mobile-nav" aria-label="Навигация на телефоне" hidden><a href="#menu">Меню</a><a href="#about">Наше место</a><a href="#visit">Как нас найти</a><button class="reserve-trigger">Забронировать стол</button></nav>
   <main>
     <section class="hero" id="home">
-      <div class="hero-copy"><h1>Хорошая еда.<br>Хороший день.</h1><p>Завтрак подольше, кофе погорячее.<br>И время для тех, кто рядом.</p><a class="yellow-button" href="#menu">Выбрать что-нибудь вкусное <span data-icon="arrow"></span></a><div class="hero-bottom"><span class="tiny-leaf" data-icon="leaf"></span><span>Ваш маленький перерыв<br>в большом Бишкеке</span><a href="#visit" aria-label="Перейти к расположению кафе"><span data-icon="pin"></span> Эркиндик, 35</a></div></div>
-      <div class="hero-image"><img src="assets/hero.jpg" alt="Боул с запечённым лососем, рисом и свежими овощами" fetchpriority="high"><div class="image-note"><span>Сегодня хочется</span><strong>чего-нибудь свежего.</strong><a href="#menu">Найдите своё в меню <span data-icon="arrow"></span></a></div><div class="round-note">Просто.<br>Вкусно.<br>С любовью.</div></div>
+      <div class="hero-copy">
+        <span class="hero-chip"><span data-icon="leaf"></span>Ваш маленький перерыв в большом Бишкеке</span>
+        <h1>Хорошая еда.<br><span class="hl">Хороший день.</span></h1>
+        <p>Завтрак подольше, кофе погорячее. И время для тех, кто рядом.</p>
+        <a class="yellow-button" href="#menu">Выбрать что-нибудь вкусное <span data-icon="arrow"></span></a>
+        <div class="hero-bottom"><a href="#visit" aria-label="Перейти к расположению кафе"><span data-icon="pin"></span>Эркиндик, 35</a><span><span data-icon="clock"></span>09:00–23:00</span></div>
+      </div>
+      <div class="hero-image">
+        <div class="plate"><img src="assets/hero.jpg" alt="Боул с запечённым лососем, рисом и свежими овощами" fetchpriority="high"></div>
+        <div class="round-note" aria-hidden="true">Просто.<br>Вкусно.<br>С любовью.</div>
+        <div class="float-chip chip-one" aria-hidden="true"><img src="assets/coffee.jpg" alt=""><span><b>Капучино</b>190 сом</span></div>
+        <div class="float-chip chip-two" aria-hidden="true"><span data-icon="sun"></span><span><b>Завтраки</b>до 13:00</span></div>
+      </div>
     </section>
     <div class="service-bar"><span><span data-icon="sun"></span>Завтраки до 13:00</span><span><span data-icon="bag"></span>С собой или с доставкой</span><span><span data-icon="leaf"></span>Есть растительные блюда</span><span><span data-icon="wifi"></span>Кофе, Wi-Fi и никаких спешек</span></div>
     <section class="menu-section section-wrap" id="menu">
