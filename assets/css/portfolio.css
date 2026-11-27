@@ -46,8 +46,15 @@ h1{font-size:clamp(50px,6.6vw,96px);line-height:.98;letter-spacing:-.055em;margi
 .window-bar{display:flex;gap:6px;padding:11px 14px;background:var(--surface);border-bottom:1px solid var(--line)}
 .window-bar i{width:9px;height:9px;border-radius:50%;background:#e2dace}
 .window-bar i:first-child{background:var(--accent)}
-.window-back{width:78%;top:0;right:0;transform:rotate(3deg)}
-.window-front{width:72%;left:0;bottom:4%;transform:rotate(-3deg)}
+.window{--r:0deg;transform:rotate(var(--r));animation:float 7s ease-in-out infinite;transition:transform .5s cubic-bezier(.16,1,.3,1),box-shadow .5s}
+.window-1{width:62%;top:0;left:0;--r:-5deg;z-index:1}
+.window-2{width:60%;top:9%;right:0;--r:5deg;z-index:2;animation-delay:-2.3s}
+.window-3{width:66%;bottom:0;left:18%;--r:-1deg;z-index:3;animation-delay:-4.6s}
+.hero-visual:hover .window-1{transform:rotate(-8deg) translate(-14px,-8px)}
+.hero-visual:hover .window-2{transform:rotate(8deg) translate(14px,-6px)}
+.hero-visual:hover .window-3{transform:rotate(0deg) translateY(6px)}
+@keyframes float{50%{translate:0 -8px}}
+@media(prefers-reduced-motion:reduce){.window{animation:none}}
 
 /* Секции */
 .section{padding-block:70px;scroll-margin-top:20px}
