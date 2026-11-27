@@ -169,3 +169,13 @@ h1{font-size:clamp(50px,6.6vw,96px);line-height:.98;letter-spacing:-.055em;margi
   .footer{font-size:13px}
 }
 @media(max-width:360px){.brand [data-owner]{max-width:170px}.mark{white-space:normal}}
+
+/* Удобство на телефоне */
+.brand{min-height:44px}
+@media(max-width:600px){
+  .contact-card{padding:36px 18px 18px}
+  .contact-link{padding:12px 16px;gap:12px;font-size:15px}
+  .contact-text{overflow-wrap:normal;word-break:normal}
+  .contact-link .go{width:18px;height:18px}
+}
+@media(max-width:380px){.contact-link{font-size:14px}}
