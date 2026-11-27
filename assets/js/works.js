@@ -23,4 +23,15 @@ window.PORTFOLIO_WORKS = [
     previewLabel: "Лист · Сайт кафе",
     tags: [],
   },
+  {
+    title: "Барбершоп «Устат»",
+    type: "Сайт услуги · Учебный проект",
+    description: "Прайс, мастера и онлайн-запись: услуги, мастер, день и свободное время — и готовое сообщение в WhatsApp.",
+    image: "assets/images/site-barber.webp",
+    imageAlt: "Главная страница сайта барбершопа «Устат»: заголовок «Чёткий фейд. Ровная борода.» и фото барбера",
+    url: "https://knifell.github.io/ustat-barber/",
+    linkLabel: "Открыть сайт барбершопа",
+    previewLabel: "Устат · Барбершоп",
+    tags: [],
+  },
 ];
