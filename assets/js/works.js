@@ -18,7 +18,7 @@ window.PORTFOLIO_WORKS = [
     description: "Меню с поиском и фильтрами, избранное и корзина. Посмотрите блюда и соберите свой заказ.",
     image: "assets/images/site-cafe.webp",
     imageAlt: "Главная страница сайта кафе «Лист»: заголовок «Хорошая еда. Хороший день.» и блюдо",
-    url: "cafe/index.html",
+    url: "https://knifell.github.io/list-cafe/",
     linkLabel: "Открыть сайт кафе",
     previewLabel: "Лист · Сайт кафе",
     tags: [],
