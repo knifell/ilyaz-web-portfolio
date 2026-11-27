@@ -6,7 +6,7 @@ window.PORTFOLIO_WORKS = [
     type: "Пример сайта",
     description: "Каталог мебели для Нооката на кыргызском и русском языках. Поиск, фильтры и корзина.",
     image: "assets/images/site-furniture.webp",
-    imageAlt: "Главная страница сайта «Жайлуу Үй»: гостиная с диваном и вид на горы",
+    imageAlt: "Главная страница сайта «Жайлуу Үй» в тёмном стиле: заголовок и фото дивана при вечернем свете",
     url: "https://knifell.github.io/furniture-demo/",
     linkLabel: "Открыть сайт мебели",
     previewLabel: "Жайлуу Үй · Каталог мебели",
