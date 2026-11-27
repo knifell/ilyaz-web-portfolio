@@ -321,7 +321,8 @@ form>small{display:block;font-size:13px;font-weight:500;color:var(--muted);margi
   .section-heading p{font-size:15px}
   .favorite-toggle{padding:10px 14px;font-size:0;gap:6px;min-height:46px}
   .favorite-toggle svg{width:19px;height:19px}
-  .menu-tools{flex-direction:column;align-items:stretch;margin-top:22px;gap:12px}
+  .menu-tools{flex-direction:column;flex-wrap:nowrap;align-items:stretch;margin-top:22px;gap:12px}
+  .menu-tools>*{min-width:0}
   .categories{gap:6px;margin-right:-4vw;padding-right:4vw}
   .category{font-size:14px;padding:10px 16px}
   .search{width:100%;max-width:none;min-width:0}
